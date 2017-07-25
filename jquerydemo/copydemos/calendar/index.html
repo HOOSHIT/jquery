@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历插件</title>
+	<link rel="stylesheet" href="../calendar/calendar.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src='../calendar/calendar.js'></script>
+</head>
+<body>
+	<h3>Calendar.js--一个简单的日历插件</h3>
+	<ul>
+		<li>体积很小</li>
+		<li>使用方便</li>
+		<li>便于我们使用到不同场景</li>
+		<li>只需修改css就可适用moblie、pc</li>
+	</ul>
+	<hr>
+	点击查看效果
+	<div style='width:300px;height:30px;background:#efefef' id='date'></div>
+	<h3 class='info'></h3>
+
+</body>
+<script>
+	$('#date').on('click',function(){
+		new Calendar({id:'#date',callback:function(y,m,d){
+			if(arguments.length>1){
+				$('#date').html(y+'-'+m+'-'+d);
+				$('.info').html('选定的时间是：'+y+'年'+m+'月'+d+'日');
+			}else{
+				$('.info').html('您为什么选择：'+y);
+			}
+			
+		}
+		})
+	})
+</script>
+</html>

@@ -1,0 +1,74 @@
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	height:0;
+	clear:both;
+	visibility: hidden;
+	content:'';
+	display: block;
+}
+.calendar{
+	width:400px;
+	text-align:center;
+	background:#fff;
+}
+.calendar-header{
+	height:50px;
+	line-height: 50px;
+}
+.calendar input{
+	width:60px;
+	height: 30px;
+	outline: none;
+	font-size: 18px;
+	border-radius:5px;
+	border-width:1px;
+	text-align:center;
+}
+.calendar .month{
+	width:30px;
+}
+.cale-left{
+	float:left;
+	width:50px;
+	cursor:pointer;
+}
+.cale-right{
+	float:right;
+	width:50px;
+	cursor:pointer;
+}
+.cale-que{
+	float:left;
+	width:50px;
+	cursor:pointer;
+}
+.cale-com{
+	float:right;
+	width:50px;
+	cursor:pointer;
+}
+.cale-nav{
+	height:30px;
+	line-height: 30px;
+	border-bottom:1px solid #999;
+}
+.cale-nav span{
+	box-sizing: border-box;
+	width:14.2857%;
+	float:left;
+	color:#aaa;
+}
+.calendar-ri span{
+	box-sizing: border-box;
+	width:14.2857%;
+	float:left;
+	height:36px;
+	line-height: 36px;
+	cursor:pointer;
+}
+.calendar-ri span.active{
+	border:1px solid #57DFF6;
+	border-radius:5px;
+}
